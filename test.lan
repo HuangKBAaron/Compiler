@@ -1,0 +1,38 @@
+var x .
+do
+	start
+		x = 20 .
+
+	start
+		var x: y : z .
+		x = 1 .
+		repeat [ x == 1 ]
+		start
+			print x.
+      if [x<2]
+			start
+				print x+2.
+			finish
+
+			y = x .
+			repeat [ y =!= 0 ]
+			start
+			  y = y - 1 .
+				print y.
+			finish
+			if [ x == 10 ]
+			start
+			  print x .
+			finish
+			if [ x == 9 ]
+			start
+			  x = x + 1.
+				if [ x == 10 ]
+				start
+				  print x.
+				finish
+			finish
+		finish	
+	finish
+	finish
+return
